@@ -1,0 +1,142 @@
+<div class="row">
+                <div class="col-md-12">
+                    <div class="testimonial-slider owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="client-image">
+                                <img src="assets/images/eksam1.jpg" alt="testimonial" />
+                            </div>
+                            <div class="client-content">                            
+                                <h3>Tatjana Saphira</h3>
+                                <h5>Mahasiswi</h5>
+                                <p>Indah, tempatnya sangat cozy dan cocok buat healing, apalagi kalau mau liat live music-nya</p>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="client-image">
+                                <img src="assets/images/eksam1.jpg" alt="testimonial" />
+                            </div><!-- /.client-image -->
+                            <div class="client-content">                            
+                                <h3>Pevita Pearce</h3>
+                                <h5>Artis</h5>
+                                <p>Indah, tempatnya sangat cozy dan cocok buat healing, apalagi kalau mau liat live music-nya</p>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div><!-- /.star -->
+                            </div><!-- /.client-content -->
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <div class="client-image">
+                                <img src="assets/images/eksam1.jpg" alt="testimonial" />
+                            </div><!-- /.client-image -->
+                            <div class="client-content">                            
+                                <h3>Raisa</h3>
+                                <h5>Artis</h5>
+                                <p>Indah, tempatnya sangat cozy dan cocok buat healing, apalagi kalau mau liat live music-nya</p>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div><!-- /.star -->
+                            </div><!-- /.client-content -->
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <div class="client-image">
+                                <img src="assets/images/eksam1.jpg" alt="testimonial" />
+                            </div><!-- /.client-image -->
+                            <div class="client-content">                            
+                                <h3>Isyana Saravati</h3>
+                                <h5>Artis</h5>
+                                <p>Indah, tempatnya sangat cozy dan cocok buat healing, apalagi kalau mau liat live music-nya</p>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div><!-- /.star -->
+                            </div><!-- /.client-content -->
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <div class="client-image">
+                                <img src="assets/images/eksam1.jpg" alt="testimonial" />
+                            </div><!-- /.client-image -->
+                            <div class="client-content">                            
+                                <h3>Maudy Ayunda</h3>
+                                <h5>Artis</h5>
+                                <p>Indah, tempatnya sangat cozy dan cocok buat healing, apalagi kalau mau liat live music-nya</p>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div><!-- /.star -->
+                            </div><!-- /.client-content -->
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <div class="client-image">
+                                <img src="assets/images/eksam1.jpg" alt="testimonial" />
+                            </div><!-- /.client-image -->
+                            <div class="client-content">                            
+                                <h3>Putri Tanjung</h3>
+                                <h5>Artis</h5>
+                                <p>Indah, tempatnya sangat cozy dan cocok buat healing, apalagi kalau mau liat live music-nya</p>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div><!-- /.star -->
+                            </div><!-- /.client-content -->
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <div class="client-image">
+                                <img src="assets/images/eksam1.jpg" alt="testimonial" />
+                            </div><!-- /.client-image -->
+                            <div class="client-content">                            
+                                <h3>Amanda Manopo</h3>
+                                <h5>Artis</h5>
+                                <p>Indah, tempatnya sangat cozy dan cocok buat healing, apalagi kalau mau liat live music-nya</p>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div><!-- /.star -->
+                            </div><!-- /.client-content -->
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <div class="client-image">
+                                <img src="assets/images/eksam1.jpg" alt="testimonial" />
+                            </div><!-- /.client-image -->
+                            <div class="client-content">                            
+                                <h3>Tyas Mirasih</h3>
+                                <h5>Artis</h5>
+                                <p>Indah, tempatnya sangat cozy dan cocok buat healing, apalagi kalau mau liat live music-nya</p>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div><!-- /.star -->
+                            </div><!-- /.client-content -->
+                        </div><!-- /.item -->
+                    </div><!-- /.testimonial-slider -->           
+                </div><!-- /.col-md-12 -->
+            </div><!-- /.row -->
