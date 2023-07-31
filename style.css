@@ -765,7 +765,7 @@ td {
 }
 
 .bg-nero {
-  background-color: #A88C72;
+  background-color: #4B9CD3;
 }
 
 .bg-green {
@@ -1472,7 +1472,7 @@ textarea {
   position: relative;
 }
 .form-area.form-four .form-group a span {
-  background-color: #21B360;
+  background-color: #ADD8E6;
 }
 .form-area.form-four h4 {
   position: relative;
@@ -2682,7 +2682,7 @@ pagination
   margin-right: 10px;
 }
 .header-top-content .left-content ul li:nth-of-type(3) i {
-  color: #21B360;
+  color: #ADD8E6;
 }
 @media only screen and (min-width: 992px) {
   .header-top-content .left-content {
@@ -2923,7 +2923,7 @@ pagination
   color: #C1C2C2;
 }
 .header-bottom-area.four .social-media a i {
-  color: #21B360;
+  color: #ADD8E6;
 }
 .header-bottom-area.four .social-media a i:hover {
   color: #C1C2C2;
@@ -3018,8 +3018,8 @@ pagination
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 19px 25px;
-  background: #21b360;
-  border-color: #21b360;
+  background: #ADD8E6;
+  border-color: #ADD8E6;
 }
 .overlay-search .btn-group .form-horizontal .btn[type="submit"] {
   border-top-left-radius: 4px;
@@ -3217,7 +3217,7 @@ pagination
   width: 240px;
 }
 .mobile-header-block .left-content ul li a {
-  color: #21b360;
+  color: #ADD8E6;
   font-weight: 600;
   text-transform: uppercase;
   display: block;
@@ -3742,7 +3742,7 @@ Sign In/Sign Up Pop up
   background-image: url(images/slider-three.png);
 }
 .slider-image .special {
-  background: #21B360;
+  background: #ADD8E6;
 }
 
 /* ========index06========== */
@@ -6067,7 +6067,7 @@ Sign In/Sign Up Pop up
 }
 
 .social-link a {
-  background-color: #21B360;
+  background-color: #ADD8E6;
   padding: 9px;
   width: 35px;
   height: 35px;
