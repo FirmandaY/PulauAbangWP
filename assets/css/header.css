@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+
+.header {
+    background: linear-gradient(#AFEEEE 0%, #4B9CD3 60%)
+}
+.logo {
+    width: 143.52px;
+}
+
+.navbar {
+    font-family: 'Montserrat';
+}
