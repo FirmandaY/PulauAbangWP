@@ -5758,7 +5758,8 @@ Sign In/Sign Up Pop up
   margin-bottom: 30px;
 }
 .widget-about-content p {
-  color: #777;
+  color: #fff;
+  font-weight: bold;
   font-size: 15px;
   font-weight: 500;
 }

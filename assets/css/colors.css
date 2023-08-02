@@ -53,7 +53,7 @@ label a {
 	background-color: #FCA22A;
 }
 .yellow-color .widget-title-area .widget-title {
-	color: #FCA22A;
+	color: #f8f8f8;
 }
 .yellow-color.widget.widget_place_category ul li a {
 	color: #FCA22A;
@@ -68,25 +68,25 @@ label a {
 	color: #FCA22A;
 }
 .stat i {
-   color: #FCA22A;
+   color: #fff;
 }
 .call-to-action.style-two .right-content .contact a {
 	background-color: #FCA22A !important;
 }
 .footer-area .bottom-content a {
-	color: #FCA22A;
+	color: #f8f8f8;
 }
 
 /**** Secondary Color ****/
 ::-moz-selection {
-	background-color: #21b360;
+	background-color: #54e4f7;
 }
 ::selection {
-	background-color: #21b360;
+	background-color: #54e4f7;
 }
 a:hover,
 a:focus {
-	color: #21b360;
+	color: #54e4f7;
 }
 .header-top-content .left-content ul li a {
     color: #f8f8f8;
@@ -97,24 +97,24 @@ a:focus {
 	color: #000000 !important;
 }
 .button:hover {
-	background-color: #21b360;
+	background-color: #2ac9e6;
 }
 .banner-text-content .more-link:hover {
-	background-color: #21b360;
+	background-color: #2ac9e6;
 }
 .call-to-action.style-two .right-content .contact a:hover {
-	background-color: #21b360;
+	background-color: #2ac9e6;
 }
 .apartments-content .text-content .top-content h3 a:hover {
-	color: #21b360;
+	color: #2ac9e6;
 }
 .dropdown-menu li a:hover,
 .share-meta li a:hover {
-	color: #21b360;
+	color: #2ac9e6;
 }
 .category-list a:hover i,
 .category-list a:hover h4 {
-	color: #21b360;
+	color: #2ac9e6;
 }
 .catagory-left-content .button:hover {
 	background-color: #21b360;
