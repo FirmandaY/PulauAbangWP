@@ -74,19 +74,19 @@ label a {
 	background-color: #FCA22A !important;
 }
 .footer-area .bottom-content a {
-	color: #f8f8f8;
+	color: #a71313;
 }
 
 /**** Secondary Color ****/
 ::-moz-selection {
-	background-color: #54e4f7;
+	background-color: #0d8a9b;
 }
 ::selection {
-	background-color: #54e4f7;
+	background-color: #0d8a9b;
 }
 a:hover,
 a:focus {
-	color: #54e4f7;
+	color: #0d8a9b;
 }
 .header-top-content .left-content ul li a {
     color: #f8f8f8;

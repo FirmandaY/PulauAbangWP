@@ -2791,7 +2791,7 @@ pagination
 
 .header-bottom-content.style-two .top-navigation .menu-list > li > a {
   letter-spacing: normal;
-  color: #3d3d3d;
+  color: #000000;
   text-transform: uppercase;
   padding: 10px 26px;
   font-weight: 700;
@@ -2802,7 +2802,7 @@ pagination
   }
 }
 .header-bottom-content.style-two .top-navigation .menu-list > li > a span {
-  color: #777777;
+  color: #000;
 }
 @media only screen and (min-width: 992px) {
   .header-bottom-content.style-two .menu-list {
