@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
+use App\Category;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
 use Carbon\Carbon;
@@ -12,7 +14,7 @@ use File;
 use Image;
 
 
-class HomeController extends Controller
+class AdminHomeController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -33,8 +35,8 @@ class HomeController extends Controller
     {
         $current_time = Carbon::now()->toDateTimeString();
         $batas = 5;
-        $data_kategori = Kategori::all();
-        $produklain = ProdukLain::all();
+        $data_category = Category::all();
+        $article = Article::all();
         $data_pesan = Pesan::orderBy('id','desc')->paginate($batas);
 
         $jumlah_harga = ProdukLain::sum('harga');
@@ -43,12 +45,12 @@ class HomeController extends Controller
        
 
         return view('home', compact(
-            'jumlah_produk', 'jenis_produk', 'jumlah_harga', 'data_kategori', 'produklain', 'data_pesan')
+            'data_category', 'article', 'data_pesan')
         );
     }
 
     public function helpPage(){
         $data_kategori = Kategori::all();
-        return view('Admin.help', compact('data_kategori'));
+        return view('Admin.help', compact('data_category'));
     }
 }

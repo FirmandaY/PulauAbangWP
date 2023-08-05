@@ -53,7 +53,7 @@
                         <div class="col-md-8">
                             
                             <div class="row">
-                                @foreach($data_kategori as $kategori)
+                                @foreach($data_category as $kategori)
                                 <div class="col-md-6">
                                     <div class="cardh bg-c-blue order-card">
                                         <div class="card-block">

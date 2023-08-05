@@ -15,7 +15,7 @@ class CreateHeroTable extends Migration
     {
         Schema::create('hero', function (Blueprint $table) {
             $table->id();
-            $table->string('image_link');
+            $table->string('image_url');
             $table->string('title');
             $table->string('description');
             $table->timestamps();

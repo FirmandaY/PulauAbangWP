@@ -15,7 +15,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Mewah Rental | Multimedia</title>
+        <title>Pulau Abang | Profil</title>
 
         <!-- Scripts (Dinonaktifkan karena untuk mencegah error pada navbar)
         <script src="{{ asset('js/app.js') }}" defer></script>-->
@@ -104,7 +104,7 @@
                         </div>
                         <div class="p-4">
                             <h1><a href="{{ route('home') }}" class="logo">
-                                Mewah-Rent <span>Rental Agency</span></a>
+                                Pulau Abang <span>Profile dan Wisata</span></a>
                             </h1>
                             <ul class="list-unstyled components mb-5">
                                 <li class="active">
@@ -112,16 +112,16 @@
                                 </li>
                                 <li>
                                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                                        <span class="fa fa-briefcase mr-3"></span> Produk
+                                        <span class="fa fa-briefcase mr-3"></span> Artikel
                                     </a>
                                     <ul class="collapse list-unstyled" id="homeSubmenu">
-                                        @foreach($data_kategori as $kategori)
+                                        @foreach($data_category as $kategori)
                                         <li>
-                                            <a href="{{ route('kategori.produklain', $kategori->nama) }}">{{ $kategori->nama }}</a>
+                                            <a href="{{ route('category.article', $kategori->title) }}">{{ $kategori->title }}</a>
                                         </li>
                                         @endforeach
                                         <li>
-                                            <a href="{{ route('adminProdukLain') }}">Daftar Semua Produk</a>
+                                            <a href="{{ route('adminArticle') }}">Daftar Semua Produk</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -131,12 +131,12 @@
                                     </a>
                                     <ul class="collapse list-unstyled" id="blogSubmenu">
                                         <li>
-                                            <a href="{{ route('adminKategori') }}">Kategori</a>
+                                            <a href="{{ route('adminCategory') }}">Kategori</a>
                                         </li>
                                         <li>
-                                            <a href="{{ route('adminAbout') }}">About</a>
+                                            <a href="{{ route('adminArticle') }}">Galeri</a>
                                         </li>
-                                        <li>
+                                        {{-- <li>
                                             <a href="{{ route('adminFAQ') }}">FAQ</a>
                                         </li>
                                         <li>
@@ -147,7 +147,7 @@
                                         </li>
                                         <li>
                                             <a href="{{ route('adminFooter') }}">Footer</a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </li>
                                 <li>

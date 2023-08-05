@@ -29,6 +29,6 @@ class CreateLokasiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('footer');
+        Schema::dropIfExists('lokasi');
     }
 }

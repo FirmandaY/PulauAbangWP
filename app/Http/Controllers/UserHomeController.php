@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
 use App\Kategori;
 use App\About;
+use App\Article;
+use App\Category;
 use App\ProdukLain;
 use App\Testimonial;
 use App\GaleriPL;
@@ -27,6 +29,9 @@ class UserHomeController extends Controller
      */
     public function index()
     {
+        $data_category = Category::all();
+        $data_article = Article::all();
+
         $data_kategori = Kategori::all();
         $data_testimoni = Testimonial::all();
         $data_promo = Promo::all();

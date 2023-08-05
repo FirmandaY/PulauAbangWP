@@ -41,32 +41,70 @@ Di bawah Ini Routes Buat Home Dashboard Admin!
 */
 
 Auth::routes([
-    'register' => false,
+    // 'register' => false,
     'reset' => false,
 ]);
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/helpPage', 'HomeController@helpPage')->name('helpPage');
+Route::get('/home', 'AdminHomeController@index')->name('home');
+Route::get('/helpPage', 'AdminHomeController@helpPage')->name('helpPage');
 
 /*
 Di bawah Ini Routes Buat Admin Kategori!
 */
 
-Route::get('/adminKategori', 'AdminKategoriController@index')->name('adminKategori');
 
-Route::get('/adminKategori/create', 'AdminKategoriController@create')->name('adminKategori.create');
+Route::get('/adminCategory', 'AdminCategoryController@index')->name('adminCategory');
 
-Route::post('/adminKategori', 'AdminKategoriController@store')->name('adminKategori.store');
+Route::get('/adminCategory/create', 'AdminCategoryController@create')->name('adminCategory.create');
 
-Route::post('/adminKategori/delete/{id}', 'AdminKategoriController@destroy')->name('adminKategori.destroy');
+Route::post('/adminCategory', 'AdminCategoryController@store')->name('adminCategory.store');
 
-Route::get('/adminKategori/edit/{id}', 'AdminKategoriController@edit')->name('adminKategori.edit');
+Route::post('/adminCategory/delete/{id}', 'AdminCategoryController@destroy')->name('adminCategory.destroy');
 
-Route::post('/adminKategori/{id}', 'AdminKategoriController@update')->name('adminKategori.update');
+Route::get('/adminCategory/edit/{id}', 'AdminCategoryController@edit')->name('adminCategory.edit');
 
-Route::get('/adminKategori/search', 'AdminKategoriController@search')->name('adminKategori.search');
+Route::post('/adminCategory/{id}', 'AdminCategoryController@update')->name('adminCategory.update');
 
-Route::get('/adminKategori/ProdukLain/{title}', 'AdminKategoriController@prodkategori')->name('kategori.produklain');
+Route::get('/adminCategory/search', 'AdminCategoryController@search')->name('adminCategory.search');
+
+Route::get('/adminCategory/Article/{title}', 'AdminCategoryController@indexArticles')->name('category.article');
+
+
+/*
+Di bawah Ini Routes Buat Admin Article
+*/
+Route::get('/adminArticle', 'AdminArticleController@index')->name('adminArticle');
+
+Route::get('/adminArticle/create', 'AdminArticleController@create')->name('adminArticle.create');
+
+Route::post('/adminArticle', 'AdminArticleController@store')->name('adminArticle.store');
+
+Route::post('/adminArticle/delete/{id}', 'AdminArticleController@destroy')->name('adminArticle.destroy');
+
+Route::get('/adminArticle/edit/{id}', 'AdminArticleController@edit')->name('adminArticle.edit');
+
+Route::post('/adminArticle/{id}', 'AdminArticleController@update')->name('adminArticle.update');
+
+Route::get('/adminArticle/search', 'AdminArticleController@search')->name('adminArticle.search');
+
+Route::get('/adminArticle/GaleriPL/{title}', 'AdminArticleController@prodgaleri')->name('galeri.article');
+
+/*
+Di bawah Ini Routes Buat Admin Galeri Website!
+*/
+Route::get('/adminGaleriPL', 'AdminGaleriPLController@index')->name('adminGaleriPL');
+
+Route::get('/adminGaleriPL/create', 'AdminGaleriPLController@create')->name('adminGaleriPL.create');
+
+Route::post('/adminGaleriPL', 'AdminGaleriPLController@store')->name('adminGaleriPL.store');
+
+Route::post('/adminGaleriPL/delete/{id}', 'AdminGaleriPLController@destroy')->name('adminGaleriPL.destroy');
+
+Route::get('/adminGaleriPL/edit/{id}', 'AdminGaleriPLController@edit')->name('adminGaleriPL.edit');
+
+Route::post('/adminGaleriPL/{id}', 'AdminGaleriPLController@update')->name('adminGaleriPL.update');
+
+Route::get('/adminGaleriPL/search', 'AdminGaleriPLController@search')->name('adminGaleriPL.search');
 
 
 /*
@@ -104,43 +142,6 @@ Route::get('/adminFAQ/edit/{id}', 'AdminFAQController@edit')->name('adminFAQ.edi
 Route::post('/adminFAQ/{id}', 'AdminFAQController@update')->name('adminFAQ.update');
 
 Route::get('/adminFAQ/search', 'AdminFAQController@search')->name('adminFAQ.search');
-
-
-/*
-Di bawah Ini Routes Buat Admin Produk Lain!
-*/
-Route::get('/adminProdukLain', 'AdminProdukLainController@index')->name('adminProdukLain');
-
-Route::get('/adminProdukLain/create', 'AdminProdukLainController@create')->name('adminProdukLain.create');
-
-Route::post('/adminProdukLain', 'AdminProdukLainController@store')->name('adminProdukLain.store');
-
-Route::post('/adminProdukLain/delete/{id}', 'AdminProdukLainController@destroy')->name('adminProdukLain.destroy');
-
-Route::get('/adminProdukLain/edit/{id}', 'AdminProdukLainController@edit')->name('adminProdukLain.edit');
-
-Route::post('/adminProdukLain/{id}', 'AdminProdukLainController@update')->name('adminProdukLain.update');
-
-Route::get('/adminProdukLain/search', 'AdminProdukLainController@search')->name('adminProdukLain.search');
-
-Route::get('/adminProdukLain/GaleriPL/{title}', 'AdminProdukLainController@prodgaleri')->name('galeri.produklain');
-
-/*
-Di bawah Ini Routes Buat Admin Galeri Produk Lain!
-*/
-Route::get('/adminGaleriPL', 'AdminGaleriPLController@index')->name('adminGaleriPL');
-
-Route::get('/adminGaleriPL/create', 'AdminGaleriPLController@create')->name('adminGaleriPL.create');
-
-Route::post('/adminGaleriPL', 'AdminGaleriPLController@store')->name('adminGaleriPL.store');
-
-Route::post('/adminGaleriPL/delete/{id}', 'AdminGaleriPLController@destroy')->name('adminGaleriPL.destroy');
-
-Route::get('/adminGaleriPL/edit/{id}', 'AdminGaleriPLController@edit')->name('adminGaleriPL.edit');
-
-Route::post('/adminGaleriPL/{id}', 'AdminGaleriPLController@update')->name('adminGaleriPL.update');
-
-Route::get('/adminGaleriPL/search', 'AdminGaleriPLController@search')->name('adminGaleriPL.search');
 
 /*
 Di bawah Ini Routes Buat Pesan Kritik/Saran!
