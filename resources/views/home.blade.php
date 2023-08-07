@@ -57,13 +57,13 @@
                                 <div class="col-md-6">
                                     <div class="cardh bg-c-blue order-card">
                                         <div class="card-block">
-                                            <h6 class="title-bar"><strong>{{ $kategori->nama }}</strong></h6>
-                                            <img src="{{ asset('thumb/'.$kategori->foto) }}" class="card-img-top" width="200px" height="185px" alt="...">
+                                            <h6 class="title-bar"><strong>{{ $kategori->title }}</strong></h6>
+                                            <img src="{{ asset('thumb/'.$kategori->image_url) }}" class="card-img-top" width="200px" height="185px" alt="...">
                                             <hr class="line-bar" color="white">
-                                            <h5>Jumlah Total Unit<i class="fa fa-cart-plus f-left"></i><span> : {{ $kategori->produklains->sum('jml_unit') }}</span></h5>
-                                            <p class="m-b-0">Jumlah Tipe (Merk)<span class="f-right">{{ $kategori->produklains->count('merk') }}</span></p>
+                                            {{-- <h5>Jumlah Total Unit<i class="fa fa-cart-plus f-left"></i><span> : {{ $kategori->produklains->sum('jml_unit') }}</span></h5> --}}
+                                            <p class="m-b-0">Jumlah Artikel<span class="f-right">{{ $kategori->articles->count('title') }}</span></p>
 
-                                            <a class="btn btn-success" href="{{ route('kategori.produklain', $kategori->nama) }}">Lihat {{ $kategori->nama }}</a>
+                                            <a class="btn btn-success" href="{{ route('adminArticle', $kategori->title) }}">Lihat {{ $kategori->title }}</a>
                                         </div>
                                     </div>
                                 </div>

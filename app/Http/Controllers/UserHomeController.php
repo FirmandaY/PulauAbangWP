@@ -12,6 +12,7 @@ use App\ProdukLain;
 use App\Testimonial;
 use App\GaleriPL;
 use App\FAQ;
+use App\Gallerie;
 use App\Promo;
 use App\Lokasi;
 use App\Kontak;
@@ -31,16 +32,10 @@ class UserHomeController extends Controller
     {
         $data_category = Category::all();
         $data_article = Article::all();
+        // $data_gallery = Gallerie::all();
 
-        $data_kategori = Kategori::all();
-        $data_testimoni = Testimonial::all();
-        $data_promo = Promo::all();
-        $data_lokasi = Lokasi::all();
-        $data_kontak = Kontak::all();
-        $data_sosial = Sosial::all();
-        $data_partner = Partner::all();
         return view('User.index', compact(
-            'data_kategori', 'data_testimoni', 'data_promo', 'data_lokasi', 'data_kontak', 'data_sosial', 'data_partner',
+            'data_category', 'data_article',
         ));
     }
 

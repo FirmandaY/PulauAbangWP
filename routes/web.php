@@ -87,24 +87,22 @@ Route::post('/adminArticle/{id}', 'AdminArticleController@update')->name('adminA
 
 Route::get('/adminArticle/search', 'AdminArticleController@search')->name('adminArticle.search');
 
-Route::get('/adminArticle/GaleriPL/{title}', 'AdminArticleController@prodgaleri')->name('galeri.article');
-
 /*
 Di bawah Ini Routes Buat Admin Galeri Website!
 */
-Route::get('/adminGaleriPL', 'AdminGaleriPLController@index')->name('adminGaleriPL');
+Route::get('/adminGallery', 'AdminGalleryController@index')->name('adminGallery');
 
-Route::get('/adminGaleriPL/create', 'AdminGaleriPLController@create')->name('adminGaleriPL.create');
+Route::get('/adminGallery/create', 'AdminGalleryController@create')->name('adminGallery.create');
 
-Route::post('/adminGaleriPL', 'AdminGaleriPLController@store')->name('adminGaleriPL.store');
+Route::post('/adminGallery', 'AdminGalleryController@store')->name('adminGallery.store');
 
-Route::post('/adminGaleriPL/delete/{id}', 'AdminGaleriPLController@destroy')->name('adminGaleriPL.destroy');
+Route::post('/adminGallery/delete/{id}', 'AdminGalleryController@destroy')->name('adminGallery.destroy');
 
-Route::get('/adminGaleriPL/edit/{id}', 'AdminGaleriPLController@edit')->name('adminGaleriPL.edit');
+Route::get('/adminGallery/edit/{id}', 'AdminGalleryController@edit')->name('adminGallery.edit');
 
-Route::post('/adminGaleriPL/{id}', 'AdminGaleriPLController@update')->name('adminGaleriPL.update');
+Route::post('/adminGallery/{id}', 'AdminGalleryController@update')->name('adminGallery.update');
 
-Route::get('/adminGaleriPL/search', 'AdminGaleriPLController@search')->name('adminGaleriPL.search');
+Route::get('/adminGallery/search', 'AdminGalleryController@search')->name('adminGallery.search');
 
 
 /*

@@ -48,6 +48,18 @@ class AdminArticleController extends Controller
 
     }
 
+    public function search(Request $request){
+        $data_category = Category::all();
+        $line = 5;
+        $look = $request->word;
+        $data_article = Article::where('title','like',"%".$look."%")->orwhere('content', 'like', "%".$look."%")
+        ->paginate($line);
+        $num = $line * ($data_article->currentPage()-1);
+        $article_category = Article::count();
+
+        return view('AdminArticle.search', compact('data_category','data_article' ,'num','article_category','look'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

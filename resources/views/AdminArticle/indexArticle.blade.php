@@ -26,68 +26,66 @@
                     <button class="btn-search btn-outline-dark">
                         <i class="fa fa-search"></i>
                     </button>
-                    <input type="text" name="kata" class="form-searchbox" placeholder="Cari Artikel..." >
+                    <input type="text" name="word" class="form-searchbox" placeholder="Cari Artikel..." >
                 </form>
 
                 <table class="table table-striped" border="2" align="center">
                     @foreach($data_article as $article)
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>id</th>
-                            <th>Gambar</th>
-                            
-                            <th colspan="7">Konten</th>
-                            
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                       
+                        <thead>
                             <tr>
-                                <td rowspan="3">{{ ++$num }}</td>
-                                <td rowspan="3">{{ $article->id }}</td>
-                                <td rowspan="3">
-                                    <img src="{{ asset('thumb/'.$article->image_link) }}" style="width: 150px; height: 100px" > <br>
-                                    <a class="btn-lihat btn-success" href="{{ asset('thumb/'.$article->image_link) }}" data-lightbox="image-1" data-title="{{ $article->merk }}">
-                                        Lihat
-                                    </a>
-                                </td>
-                                <td colspan="7">{!! $article->content !!}</td>
-                                <td>
-                                    <form action="{{ route('adminArticle.destroy', $article->id) }}" method="post">
-                                        @csrf
-                                        <button class="btn btn-danger" onClick="return confirm ('Yakin mau dihapus?')">
-                                            <i class="fa fa-trash"></i>Hapus Artikel
-                                        </button>
-                                    </form>
-                                    <form action="{{ route('adminArticle.edit', $article->id) }}" method="get">
-                                        @csrf
-                                        <button class="btn btn-warning" onClick="return confirm ('Yakin mau diubah?')"
-                                        style="padding-right:20px; padding-left:20px; margin-top:5px;"> 
-                                            <i class="fa fa-pencil"></i>Edit Artikel
-                                        </button>
-                                    </form>
-                                </td>
-
-                            
+                                <th>No</th>
+                                <th>id</th>
+                                <th>Gambar</th>
                                 
+                                <th colspan="7">Konten</th>
+                                
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                                <tr>
+                                    <td rowspan="4">{{ ++$num }}</td>
+                                    <td rowspan="4">{{ $article->id }}</td>
+                                    
+                                    <td rowspan="4">
+                                        <img src="{{ asset('thumb/'.$article->image_link) }}" style="width: 150px; height: 100px" > <br>
+                                        <a class="btn-lihat btn-success" href="{{ asset('thumb/'.$article->image_link) }}" data-lightbox="image-1" data-title="{{ $article->merk }}">
+                                            Lihat
+                                        </a>
+                                    </td>
                                     <tr>
                                         <th>Judul</th>
                                         <th>Kategori Artikel</th>
                                         <th>Deskripsi</th>
                                     </tr>
-                                
                                     <tr>
                                 
                                         <td>{{ $article->title }}</td>
                                         <td>{{ $article->articles->title }}</td>
                                         <td>{{ $article->description }}</td>
                                     </tr>
-                                    <tr ><td colspan="11"></td></tr>
-                            </tr>
-                        
-                    </tbody>
+                                    <td colspan="7">{!! $article->content !!}</td>
+                                    <td>
+                                        <form action="{{ route('adminArticle.destroy', $article->id) }}" method="post">
+                                            @csrf
+                                            <button class="btn btn-danger" onClick="return confirm ('Yakin mau dihapus?')">
+                                                <i class="fa fa-trash"></i>Hapus Artikel
+                                            </button>
+                                        </form>
+                                        <form action="{{ route('adminArticle.edit', $article->id) }}" method="get">
+                                            @csrf
+                                            <button class="btn btn-warning" onClick="return confirm ('Yakin mau diubah?')"
+                                            style="padding-right:20px; padding-left:20px; margin-top:5px;"> 
+                                                <i class="fa fa-pencil"></i>Edit Artikel
+                                            </button>
+                                        </form>
+                                    </td>
+                                    
+                                        <tr ><td colspan="11"></td></tr>
+                                </tr>
+                            
+                        </tbody>
                     
                     
                     @endforeach

@@ -11,7 +11,7 @@
 
         
 
-        <link rel="shortcut icon" href="{{asset('images/logomewahicon.png')}}">
+        <link rel="shortcut icon" href="{{asset('images/logoabang.png')}}">
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -43,7 +43,7 @@
                 <div class="container">
                     
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="{{asset('images/logomewah.png')}}" alt="sing up image" width='60' height='25'>
+                        <img src="{{asset('images/logoabangfull.png')}}" alt="sing up image" width='60' height='25'>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                         <span class="navbar-toggler-icon"></span>
@@ -121,7 +121,7 @@
                                         </li>
                                         @endforeach
                                         <li>
-                                            <a href="{{ route('adminArticle') }}">Daftar Semua Produk</a>
+                                            <a href="{{ route('adminArticle') }}">Daftar Semua Artikel</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -131,27 +131,12 @@
                                     </a>
                                     <ul class="collapse list-unstyled" id="blogSubmenu">
                                         <li>
-                                            <a href="{{ route('adminCategory') }}">Kategori</a>
+                                            <a href="{{ route('adminCategory') }}">Kategori Artikel</a>
                                         </li>
                                         <li>
-                                            <a href="{{ route('adminArticle') }}">Galeri</a>
+                                            <a href="{{ route('adminGallery') }}">Galeri Pulau Abang</a>
                                         </li>
-                                        {{-- <li>
-                                            <a href="{{ route('adminFAQ') }}">FAQ</a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('adminPromo') }}">Promo</a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('adminTestimoni') }}">Testimoni</a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('adminFooter') }}">Footer</a>
-                                        </li> --}}
                                     </ul>
-                                </li>
-                                <li>
-                                    <a href="{{ route('adminGaleriPL') }}"><span class="fa fa-suitcase mr-3"></span> Galeri</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('adminPesan') }}"><span class="fa fa-paper-plane mr-3"></span>Pesan</a>

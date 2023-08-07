@@ -155,19 +155,19 @@
                </div>
             </div>
             <div class="row">
-               @foreach($data_kategori as $kategori)
+               @foreach($data_category as $kategori)
               
                   <div class = "containerche col-md-4">
                      <div class = "cardche">
                         <div class = "imageche">
-                           <figure><img class="img-che" src="{{ asset('thumb/'.$kategori->foto) }}" alt="#"/></figure>
-                           <strong>{{ $kategori->nama }}</strong>
+                           <figure><img class="img-che" src="{{ asset('thumb/'.$kategori->image_link) }}" alt="#"/></figure>
+                           <strong>{{ $kategori->title }}</strong>
                         </div>
                        
                         <div class = "content">
-                           <!-- <h3>{{ $kategori->nama }}</h3> -->
-                           <p>{!! $kategori->keterangan !!}</p> <br>
-                           <form action="{{ route('user.produklain', $kategori->nama) }}" method="post">
+                           <!-- <h3>{{ $kategori->title }}</h3> -->
+                           <p>{!! $kategori->description !!}</p> <br>
+                           <form action="{{ route('user.produklain', $kategori->title) }}" method="post">
                               @csrf
                               <button class="btn btn-warning">Selengkapnya</button>
                            </form> <br>
