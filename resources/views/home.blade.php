@@ -38,7 +38,7 @@
                 
             </div>
             <div class="title-dash m-b-md">
-                <img src="{{  asset('images/logomewahfix.png') }}" width="200px" height="150px"><br>
+                <img src="{{  asset('images/logoabangfull.png') }}" width="350px" height="150px"><br>
                 <p>Selamat Datang di Ruang Admin!</p>
             </div>
             
@@ -50,11 +50,11 @@
             <section>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                             
                             <div class="row">
                                 @foreach($data_category as $kategori)
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="cardh bg-c-blue order-card">
                                         <div class="card-block">
                                             <h6 class="title-bar"><strong>{{ $kategori->title }}</strong></h6>
@@ -71,7 +71,7 @@
                             </div>
                             
                         </div>
-                        <div class="box-pesan col-md-4">
+                        {{-- <div class="box-pesan col-md-4">
                             <div class="pesan-dash" >
                                 <h6 class="title-bar" >Pesan Customer <br> Hari Ini</h6>
                                 <i class="fa fa-commenting-o" style="font-size:36px; "></i>
@@ -86,7 +86,7 @@
                             </div>
                             @endforeach
                             <div>{{$data_pesan->links()}}</div>
-                        </diV>
+                        </diV> --}}
                     </div>
                 </div>
             </section>

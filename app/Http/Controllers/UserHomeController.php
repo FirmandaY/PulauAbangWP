@@ -39,6 +39,22 @@ class UserHomeController extends Controller
         ));
     }
 
+    public function article($title)
+    {
+        $line = 9;
+        $data_category = Category::all();
+        
+        $category = Category::where('nama', $title)->first();
+        $articles = $category->articles()->orderBy('id', 'desc')->paginate($line);
+        $no = $line * ($articles->currentPage()-1);
+
+        return view('User.Articles.artikel', compact(
+            'article', 'produks', 'jumlah_produk', 'jenis_produk', 'jumlah_harga', 'data_kategori', 'no', 
+            'data_lokasi', 'data_kontak', 'data_sosial', 'data_partner',
+            )
+        );
+    }
+
     public function produklain($title)
     {
         $batas = 9;

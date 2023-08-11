@@ -50,7 +50,7 @@ class AdminHomeController extends Controller
     }
 
     public function helpPage(){
-        $data_kategori = Kategori::all();
+        $data_category = Category::all();
         return view('Admin.help', compact('data_category'));
     }
 }
