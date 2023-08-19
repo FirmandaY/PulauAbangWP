@@ -6926,15 +6926,15 @@ Sign In/Sign Up Pop up
   padding-top: 10px;
 }
 .instagram-image-content > a {
-  width: 110px;
+  width: 300px;
   display: inline-block;
-  height: 110px;
-  margin-right: 4px;
+  height: 200px;
+  margin-right: 5px;
   overflow: hidden;
 }
 .instagram-image-content img {
-  width: 114px;
-  height: 118px;
+  width: 300px;
+  height: 200px;
 }
 
 /*--------------------------------------------------------------
